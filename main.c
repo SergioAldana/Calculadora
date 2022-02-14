@@ -84,6 +84,20 @@ int main(int args, char *argv[]) {
             } else printf("No se puede hacer la raiz cuadrada de un numero negativo");
             break;
 
+        case 7:     /* Raiz Cubica */
+
+        /*verificar
+            float z;
+            int num;
+            cout<<"ingrese un numero para calcular la raiz cubica : ";
+            cin>>num;
+
+            z=cbrt(num);
+
+            cout<<z;
+            return 0;
+            */
+
     } /* fin switch */
 }  /* fin main */
 
