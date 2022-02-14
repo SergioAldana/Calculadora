@@ -1,0 +1,10 @@
+# ninja log v5
+3	153	6665691082051098	CMakeFiles/Sistemas_Distribuidos.dir/main.c.obj	dd9bbf62d2dd2b45
+153	322	6665691083769784	Sistemas_Distribuidos.exe	49118fd657e61958
+1	492	6665692106828608	build.ninja	987d0d9ad5480a41
+4	135	6665692685836118	CMakeFiles/Sistemas_Distribuidos.dir/main.c.obj	940817871d5cd67b
+136	307	6665692687554800	Sistemas_Distribuidos.exe	49118fd657e61958
+3	281	6665693567566256	CMakeFiles/Sistemas_Distribuidos.dir/main.c.obj	940817871d5cd67b
+282	524	6665693569910580	Sistemas_Distribuidos.exe	49118fd657e61958
+3	227	6665696169201868	CMakeFiles/Sistemas_Distribuidos.dir/main.c.obj	940817871d5cd67b
+229	474	6665696171545543	Sistemas_Distribuidos.exe	49118fd657e61958
