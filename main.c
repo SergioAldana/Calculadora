@@ -2,8 +2,9 @@
 #include<math.h>
 
 /*
- * Codigo personalizado de la siguiente pagina:
+ * Adaptado de:
  * https://www.lawebdelprogramador.com/codigo/C-Visual-C/97-Calculadora-en-C.html
+ * https://www.lawebdelprogramador.com/foros/C-Visual-C/556755-Calcular-la-raiz-cubica.html
  */
 
 int main(int args, char *argv[]) {
@@ -19,6 +20,7 @@ int main(int args, char *argv[]) {
     printf(" 4. Division \n");
     printf(" 5. Potencia \n");
     printf(" 6. Raiz Cuadrada \n");
+    printf(" 7. Raiz Cubica \n");
     printf("Elige una de las siguientes operaciones: \n");
     scanf("%d", &opcion);
 
@@ -85,18 +87,16 @@ int main(int args, char *argv[]) {
             break;
 
         case 7:     /* Raiz Cubica */
+            printf("Introduce un numero para la raiz cubica: \n");
+            scanf("%i", &a);
+            if (a > 0) {
+                resultado= pow(a, (double )1/3);
+                if (a > 27) {
+                    resultado = resultado + 1;
+                    printf("La RAIZ CUBICA de %i es %i", a, resultado);
+                } else printf("La RAIZ CUBICA de %i es %i", a, resultado);
+            } else printf("No se puede hacer la raiz cubica de un numero negativo");
 
-        /*verificar
-            float z;
-            int num;
-            cout<<"ingrese un numero para calcular la raiz cubica : ";
-            cin>>num;
-
-            z=cbrt(num);
-
-            cout<<z;
-            return 0;
-            */
 
     } /* fin switch */
 }  /* fin main */
