@@ -21,6 +21,7 @@ int main(int args, char *argv[]) {
     printf(" 5. Potencia \n");
     printf(" 6. Raiz Cuadrada \n");
     printf(" 7. Raiz Cubica \n");
+    printf(" 8. Raiz Cuarta \n");
     printf("Elige una de las siguientes operaciones: \n");
     scanf("%d", &opcion);
 
@@ -90,13 +91,22 @@ int main(int args, char *argv[]) {
             printf("Introduce un numero para la raiz cubica: \n");
             scanf("%i", &a);
             if (a > 0) {
-                resultado= pow(a, (double )1/3);
+                resultado = pow(a, (double) 1 / 3);
                 if (a > 27) {
                     resultado = resultado + 1;
                     printf("La RAIZ CUBICA de %i es %i", a, resultado);
                 } else printf("La RAIZ CUBICA de %i es %i", a, resultado);
             } else printf("No se puede hacer la raiz cubica de un numero negativo");
+            break;
 
+        case 8:     /* Raiz Cuarta */
+            printf("Introduce un numero para la raiz cuarta: \n");
+            scanf("%i", &a);
+            if (a > 0) {
+                resultado = pow(a, (double) 1 / 4);
+                printf("La RAIZ CUARTA de %i es %i", a, resultado);
+            } else printf("No se puede hacer la raiz cuarta de un numero negativo");
+            break;
 
     } /* fin switch */
 }  /* fin main */
